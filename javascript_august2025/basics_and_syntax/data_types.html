@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- Data Types (string, number, boolean, object, null, undefined, symbol, bigint)
+
+            Description: JavaScript has primitive types (immutable) and objects (mutable). Primitives: string, number, boolean, symbol, bigint, null, undefined. Objects are key-value collections.
+
+            Syntax: Direct assignment, e.g., let varName = 'string'; or let obj = {prop: value};
+            */
+
+            /* --- Example 1: Mixing types in a user profile --- */
+            let name = "Alice"; // string
+            let age = 30; // number
+            let isActive = true; // boolean
+            let profile =  { // object
+                name: name,
+                age: age,
+                isActive: isActive,
+                address: null, // null
+                phone: undefined // undefined
+            };
+            let empty = null; // null
+            let notSet; // undefined
+            let uniqueId = Symbol("id"); // symbol
+            let bigNumber = 9007199254740991n; // bigint
+
+            console.log(typeof name); // string
+            console.log(typeof age); // number
+            console.log(typeof isActive); // boolean
+            console.log(typeof profile); // object
+            console.log(typeof empty); // object (quirk)
+            console.log(typeof notSet); // undefined
+            console.log(typeof uniqueId); // symbol
+            console.log(typeof bigNumber); // bigint
+
+            console.log({uniqueId}); // Symbol(id)
+            // Show me how to use uniqueId in an object
+            profile[uniqueId] = 12345;
+            console.log(profile[uniqueId]); // 12345
+
+            /* --- Example 2: Checking for undefined/null in input validation --- */
+           let input;
+           if (input === undefined) {
+                input = null;
+           }
+           
+           console.log({input}); // null
+        </script>
+    </body>
+</html>
