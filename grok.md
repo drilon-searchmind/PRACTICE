@@ -59,6 +59,6 @@ Event Handlers (addEventListener(), removeEventListener()), Event Types (click, 
 ## Browser APIs
 Window Object (alert(), confirm(), prompt(), open(), close(), history, location, navigator), Storage (localStorage.setItem(), getItem(), removeItem(), clear(); sessionStorage), Fetch API (fetch(), then() for responses), Canvas, Web Workers, Geolocation.
 
-##Advanced Topics
+## Advanced Topics
 Iterables and Iterators (Symbol.iterator, next()), Generators (function*, yield), Symbols (Symbol(), Symbol.for()), Proxy (new Proxy(), get, set traps), Reflect API, WeakMap, WeakSet, Bitwise Operations, Performance (timing with console.time()), Debugging (console.log(), console.error(), debugger), Best Practices (avoid globals, use strict, modular code), Common Mistakes (== vs ===, hoisting issues, async pitfalls).
 
