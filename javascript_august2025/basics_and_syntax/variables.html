@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- Variables (var, let, const)
+
+            Description: Variables store data. var is function-scoped and hoistable; let and const are block-scoped (introduced in ES6). const prevents reassignment but allows mutation of objects/arrays.
+
+            Syntax: var/let/const variableName = value;
+            */
+
+            /* --- Example 1: Basic declaration and reassignment --- */
+           
+            var oldSchool = 10;
+            let modern = "Hello";
+            const fixed = true;
+
+            oldSchool = 20; // Reassigning var
+            modern = "World"; // Reassigning let
+            // fixed = false; // Error: Assignment to constant variable
+
+            console.log(oldSchool); // 20
+            console.log(modern); // World
+            console.log(fixed); // true
+
+            /* --- Example 2: In a loop (showing block scope) --- */
+            for (let i =0; i < 3; i++) {
+                console.log({i}); // 0, 1, 2
+            }
+
+            var j = 5;
+            j = 10;
+            console.log({j}); // 10
+            
+            var jNew = 0;
+            for (let i = 0; i < 10; i++) {
+                jNew++;
+
+                console.log({jNew}); // 1, 2, ..., 10
+            }
+        </script>
+    </body>
+</html>
