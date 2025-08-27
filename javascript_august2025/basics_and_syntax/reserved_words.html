@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- Reserved Words (e.g., break, case, class)
+
+            Description: Keywords with special meaning; can't be used as identifiers.
+
+            Syntax: Avoid in variable names.
+            */
+
+            /* --- Example 1: Attempting use --- */
+            // let class = "myClass"; // SyntaxError: Unexpected token 'class'
+            let className = "myClass"; // Valid alternative
+            console.log(className); // Outputs: "myClass"
+
+            /* --- Example 2: In switch --- */
+            let day = 1;
+            switch(day) {
+                case 1:
+                    console.log("Monday");
+                    break;
+                // fallback
+                default:
+                    console.log("Another day");
+            }
+        </script>
+    </body>
+</html>
