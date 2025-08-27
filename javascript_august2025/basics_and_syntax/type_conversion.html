@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- Type Conversion (String(), Number(), Boolean())
+
+            Description: Explicitly convert types (e.g., number to string).
+
+            Syntax: String(value), Number(value), Boolean(value)
+            */
+
+            /* --- Example 1: Converting for concatenation--- */
+            let num = 123;
+            let str = String(num); // Converts number to string
+            console.log(str); // Outputs: "123"
+            console.log(typeof str); // Outputs: "string"
+
+            /* --- Example 2: To number/boolean --- */
+            let strNum = "456";
+            console.log(Number(strNum) + 1); // Outputs: 457 (string to number)
+            console.log(Boolean(0)); // Outputs: false (0 is falsy)
+            console.log(Boolean("hello")); // Outputs: true (non-empty string is truthy)
+        </script>
+    </body>
+</html>
