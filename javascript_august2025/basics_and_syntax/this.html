@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- this Keyword
+
+            Description: Refers to current execution context (global, object, function).
+
+            Syntax: Used inside functions/objects.
+            */
+
+            /* --- Example 1: Global context --- */
+            console.log(this); // In global scope, refers to global object (window in browsers)
+
+            /* --- Example 2: Object method --- */
+            const person = {
+                name: "Bob",
+                greet: function() {
+                    console.log(this.name)
+                }
+            }
+
+            person.greet(); // Outputs: "Bob" - 'this' refers to 'person' object
+        </script>
+    </body>
+</html>
