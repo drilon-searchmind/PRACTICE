@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /* --- Operators (arithmetic: +, -, *, /, %; assignment: =, +=, -=; comparison: ==, ===, !=, >, <; logical: &&, ||, !; bitwise: &, |, ^, ~, <<, >>)
+
+            Description: Operators perform actions on values. Arithmetic for math; assignment for updates; comparison for checks (=== is strict); logical for conditions; bitwise for bit-level ops
+
+            Syntax: Varies, e.g., value1 + value2 or condition1 && condition2.
+            */
+
+            /* --- Example 1: Arithmetic and assignment in a calculator --- */
+            let total = 10;
+            total += 5; // total = total + 5
+            total -= 3; // total = total - 3
+            let result = (total * 2) / 4 % 3
+            console.log({total, result}); // {total: 12, result: 0}
+            console.log({total, result}); // {total: 12, result: 0}
+            
+            /* --- Example 2: Comparison and logical in user auth check --- */
+            let password = "123"
+            let input = 123
+
+            console.log(password == input); // true (loose equality)
+            console.log(password === input); // false (strict equality)
+            console.log(input != 123); // false
+            console.log(input > 100 && input < 200); // true
+            console.log(!(input < 100)); // true
+            console.log(true || false); // true
+        </script>
+    </body>
+</html>
